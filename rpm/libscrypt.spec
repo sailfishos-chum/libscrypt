@@ -4,7 +4,7 @@ Release:        1%{?dist}
 Summary:        Library that implements the secure password hashing function "scrypt"
 License:        BSD
 URL:            http://www.lolware.net/libscrypt.html
-Source0:        https://github.com/technion/libscrypt/archive/v%{version}.tar.gz
+Source:         %{name}-%{version}.tar.gz
 
 BuildRequires:  coreutils
 BuildRequires:  findutils
