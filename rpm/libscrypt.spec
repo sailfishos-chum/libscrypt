@@ -14,6 +14,9 @@ BuildRequires:  make
 %description
 This is a library that implements the secure password hashing function "scrypt".
 
+Custom:
+  Repo: https://github.com/technion/libscrypt
+
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
@@ -21,6 +24,9 @@ Requires:       %{name}%{?_isa} = %{version}-%{release}
 %description    devel
 The %{name}-devel package contains libraries and header files for
 developing applications that use %{name}.
+
+Custom:
+  Repo: https://github.com/technion/libscrypt
 
 %prep
 %setup -q -n %{name}-%{version}/libscrypt
